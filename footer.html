@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>   
+    footer {
+        background-color: #1c3972;
+        padding: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: #f5ebe2;
+    }
+
+    .card-container {
+        color: #f5ebe2;
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 5dvw;
+        margin-right: 5dvw;
+        padding: 40px 20px;
+        overflow-x: auto; 
+        }
+
+    .card {
+        flex: 1 1 calc(33.333% -20px); 
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 2dvw;
+        width: 20dvw;
+        min-width: 270px;
+        box-shadow: 0 2px 5px rgba(222, 180, 180, 0.1);
+        background-color: #1c3972;
+    }
+
+    .card h3 {
+        margin-top: 0;
+        font-size: 22px;
+        color: #f5ebe2;
+    }
+
+    /* Responsywność */
+    @media (max-width: 968px) {
+        .card-container {
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .card {
+            width: 70%;
+            max-width: 90%;
+        }
+        .card h3 {
+        margin-top: 0;
+        font-size: 19px;
+        color: #f5ebe2;
+    }
+    }
+
+</style>
+
+</head>
+
+<body>
+    <footer>
+        <h1 style="text-align: left; margin-top: 4dvw; margin-left: 6dvw;   font-size: 3.5em;">Informacje kontaktowe</h1>
+        <div class="card-container">
+            <div class="card">
+                <h2>Rebeka Raczyńska</h2>
+                <h3>Ulica Miasto Kod Pocztowy</h3>
+                <h3>Tel.: +48 516 910 738</h3>
+                <h3>rebekar.events@gmail.com</h3>
+            </div>
+            <div class="card">
+                <h2> XXXXX xXXXXX</h2>
+                <h3>XXXXXXXXXXXXXXXXXXx</h3>
+                <h3>XXXXXXXXXXXXXXX</h3>
+                <h3>XXXXXXXXXXXXXXXXXXX</h3>
+            </div>
+            <div class="card">
+                <h2>Znajdziesz nas na:</h2>
+                <a href="http://instagram.com/rare_events_by_rr?igsh=aGZ4YXRhczg1ZnA="><img
+                        src="/resources/icons8-instagram-96.png" alt="Instagram" style="height: 60px; padding: 1dvw;"></a>
+                <a href="facebook.com/profile.php?id=61575165800085"><img src="/resources/icons8-facebook-100.png"
+                        alt="Facebook" style="height: 60px;  padding: 1dvw;"></a>
+                <a href="https://www.linkedin.com/in/rebeka-raczy%C5%84ska-72947b223/?originalSubdomain=pl"><img
+                        src="/resources/icons8-linkedin-100.png" alt="linkedIn" style="height: 60px;  padding: 1dvw;"></a>
+                <h3 style="border: 2px solid #f5ebe2; padding: 10px; border-radius: 30px; display: inline-block; ">Otaguj
+                    nas pod swoim zdjęciem #RareEvents</h3>
+            </div>
+        </div>
+
+        <p style="margin-top: 14dvh;">&copy;2025 Rare Events. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+
+</html>

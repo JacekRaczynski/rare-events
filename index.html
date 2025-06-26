@@ -4,34 +4,248 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rare Events</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    p {
-      font-size: 1.2em;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #888;
-    }
-  </style>
+    <link rel="stylesheet" href="style.css">
+  
+  
 </head>
 <body>
-  <h1>Rare Events</h1>
-  <p>Witamy na stronie poświęconej rzadkim zdarzeniom i analizie danych!</p>
-  <p>Strona w budowie – więcej informacji wkrótce.</p>
 
-  <footer>
-    &copy; 2025 Rare Events Project
-  </footer>
+  <header style="display: flex; align-items: center;">
+    <nav>
+      <a href="/"><img src="/resources/beige.png" alt="Logo" style="height: 80px; margin: 50px;"></a>
+    </nav>
+  </header>
+  <div class="content">
+    <section style="height: 80vh; display: flex; flex-direction: column; justify-content: flex-end; padding:1rem;">
+      <div class="headlineRR">
+        <h1>Rare Events</h1>
+      </div>
+
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <img src="/resources/arrow_down2.png" alt="Scroll Button" style="cursor: pointer; width: 100px;"
+          onclick="document.getElementById('welcome').scrollIntoView({ behavior: 'smooth' });">
+      </div>
+    </section>
+
+    <section id="welcome"
+      style="background-color:#f5ebe2; display: flex; height: 100dvh;  display: flex; flex-direction: column; justify-content: flex-end; padding:1rem">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="/resources/DJI_0406.MP4" type="video/mp4">
+          Twoja przeglądarka nie obsługuje wideo.
+        </video>
+
+        <div class="overlay-text">Welcome to your dreamlike event management page /n</div>
+
+      </div>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <img src="/resources/arrow_down.png" alt="Scroll Button" style="cursor: pointer; width: 100px;"
+          onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' });">
+      </div>
+    </section>
+    <section class="section-page" id="services">
+        <div class="rotated-text" style="color: #f5ebe2"">Services</div>
+        <div class="activity-card">
+          <img class="activity-image" src="/resources/248.jpg" alt="Wedding and special celebrations"
+            style="height: 18dvw; ">
+          <div class="activity-content">
+            <h2>Weddings and special celebrations </h2> <a href="/" style="color:#f5ebe2">
+              <h3>Read more (3min)</h3>
+            </a>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img class="activity-image" src="/resources/213.jpg" alt="Wedding and special celebrations"
+            style="height: 18dvw; ">
+          <div class="activity-content">
+            <h2>Weddings and special celebrations </h2> <a href="/" style="color:#f5ebe2">
+              <h3 style="padding: 30px;">Read more (3min)</h3>
+            </a>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img class="activity-image" src="/resources/265.jpg" alt="Wedding and special celebrations"
+            style="height: 18dvw; ">
+          <div class="activity-content">
+            <h2>Weddings and special celebrations </h2> <a href="/" style="color:#f5ebe2">
+              <h3 style="padding: 30px;">Read more (3min)</h3>
+            </a>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img class="activity-image" src="/resources/diving.jpg" alt="Wedding and special celebrations"
+            style="height: 18dvw; ">
+          <div class="activity-content">
+            <h2>Weddings and special celebrations </h2> <a href="/" style="color:#f5ebe2">
+              <h3 style="padding: 30px;">Read more (3min)</h3>
+            </a>
+          </div>
+        </div>
+        <div style="
+        position: absolute;
+        bottom: 20px; /* odstęp od dolnej krawędzi */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        cursor: pointer;
+      ">
+          <img src="/resources/arrow_down2.png" alt="Scroll Button" style="cursor: pointer; width: 100px;"
+            onclick="document.getElementById('services2').scrollIntoView({ behavior: 'smooth' });">
+        </div>
+      </section>
+
+      <section class="section-page" id="services2" style="background-color: #f5ebe2;">
+        <div class="rotated-text" style=" color: #1c3972">Services</div>
+        <div class="activity-card">
+          <img class="activity-image" src="/resources/006.jpg" alt="Wedding and special celebrations"
+            style="height: 18dvw; ">
+          <div class="activity-content" style=" border: 1px solid #555; color: #1c3972">
+            <h2>Weddings and special celebrations </h2> <a href="/" style="color:#1c3972">
+              <h3 style="padding: 30px;">Read more (3min)</h3>
+            </a>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img class="activity-image" src="/resources/016.jpg" alt="Wedding and special celebrations"
+            style="height: 18dvw; ">
+          <div class="activity-content" style=" border: 1px solid #555; color: #1c3972">
+            <h2>Weddings and special celebrations </h2> <a href="/" style="color:#1c3972">
+              <h3 style="padding: 30px;">Read more (3min)</h3>
+            </a>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img class="activity-image" src="/resources/023.jpg" alt="Wedding and special celebrations"
+            style="height: 18dvw; ">
+          <div class="activity-content" style=" border: 1px solid #555; color: #1c3972">
+            <h2>Weddings and special celebrations </h2> <a href="/" style="color:#1c3972">
+              <h3 style="padding: 30px;">Read more (3min)</h3>
+            </a>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img class="activity-image" src="/resources/059.jpg" alt="Wedding and special celebrations"
+            style="height: 18dvw; ">
+          <div class="activity-content" style=" border: 1px solid #555; color: #1c3972">
+            <h2>Weddings and special celebrations </h2> <a href="/" style="color:#1c3972">
+              <h3 style="padding: 30px;">Read more (3min)</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      </section>
+
+      <section class="section-page" id="Aboutme" style="background-color: #f5ebe2;
+      background: linear-gradient(to bottom, #f0e5dc, rgba(245, 245, 220, 0));">
+                <div class="rotated-text" >About me</div>
+          <a href="/" style="position: absolute;"><img src="/resources/navy.png" alt="Logo" style="height: 80px; margin-left: 2dvw;  "></a>
+
+          <div class="frame" style="margin-left: 8dvw;">
+            <h2 style=" font-weight: bold">O mnie</h2>
+            <p>Rare Events to mój sposób na realizację swoich pasji
+              i organizowanie prawdziwie wyjątkowych wydarzeń.
+              Najważniejsza jest dla mnie satysfakcja klientów, dlatego
+              nie przestaję się rozwijać.</p>
+              <ul>
+                <li>Master in Project Management, Rome Business School, Universidad Internacional de Valencia</li>
+                <li>Zarządzanie organizacjami, Uniwersytet Gdański</li>
+                <li>Organizowanie wydarzeń w pracy, wolontariacko i dla przyjemności</li>
+                <li> Już działam nad kolejnym celem!</li>
+            </ul>
+            <p>
+              Prywatnie uwielbiam J.R.R. Tolkiena, Agathę Christie
+              i wielu im podobnych. “Spędzam” z nimi (za)dużo czasu.</p>
+          </div>
+            <img class="aboutme-img" src="/resources/Rare Events3.png" alt="My profile" >
+            <div style="
+            position: absolute;
+            bottom: 20px; /* odstęp od dolnej krawędzi */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            cursor: pointer;
+          ">
+              <img src="/resources/arrow_down.png" alt="Scroll Button" style="cursor: pointer; width: 100px;"
+                onclick="document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' });">
+            </div>
+      </section>
+
+      <section id="reviews" style="
+      height: 100vh;
+      position: relative;
+      flex-wrap: wrap;
+      overflow: hidden;
+      color : white;">
+      <a href="/"><img src="/resources/beige.png" alt="Logo" style="height: 80px; margin-left: 2dvw; margin-top: 2dvw;"></a>
+        <div class="rotated-text" style= "color: #f0e5dc; margin-left: 5dvw;" >Reviews</div>
+        <div class="grid-container">
+          <div class="review-card" style="grid-column: 1; grid-row: 1;">
+              <img src="/resources/quote.png" alt="quote image">
+              <div>
+                <p>Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.</p>
+                <p style="margin: 1dvw;">-Santa Solana Post</p>
+              </div>
+            </div>
+          <div class="review-card" style="grid-column: 2; grid-row: 1;">
+            <img src="/resources/quote.png" alt="quote image">
+            <div class="review">
+              <p>Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.</p>
+              <p style="margin: 1dvw;">-Santa Solana Post</p>
+     
+            </div>
+          </div>
+          <div class="review-card" style="grid-column: 1 / span 2;">
+            <img src="/resources/quote.png" alt="quote image">
+            <div class="review">
+              <p>Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.</p>
+              <p style="margin: 1dvw;">-Santa Solana Post</p>
+     
+            </div>
+          </div>
+        </div>
+  
+      </section>
+      <section class="section-page" id="XXXXX" style="background-color: #f5ebe2;
+      background: linear-gradient(to bottom, #f0e5dc, rgba(245, 245, 220, 0));">
+          <a href="/"><img src="/resources/navy.png" alt="Logo" style="height: 80px; margin-left: 2dvw;"></a>
+          <div class="rotated-text" >XXXXXXXXXX</div>
+          <div class="frame" style = "background-image: url('/resources/image6.png'); height: 80dvh; color:#f0e5dc">
+            <p style="margin-top: 40dvh; text-shadow: 3px 3px 5px black;">
+              Weding weding weding</p>
+            <h1>
+              Weding weding wedingasddddddddddddasda</h1>
+          </div>
+          <div class="frame" style = "background-image: url('/resources/image7.png');height: 80dvh; background-size: cover; color:#f0e5dc">
+            <p style="margin-top: 40dvh; text-shadow: 3px 3px 5px black;">
+              Weding weding weding</p>
+            <h1>
+              Weding weding wedingasddddddddddddasda</h1>
+          </div>
+
+            <div style="
+            position: absolute;
+            bottom: 20px; /* odstęp od dolnej krawędzi */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            cursor: pointer;
+          ">
+              <img src="/resources/arrow_down.png" alt="Scroll Button" style="cursor: pointer; width: 100px;"
+                onclick="document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' });">
+            </div>
+      </section>
+      <div id="footer"></div>
+      <script>
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer').innerHTML = data;
+          });
+
+      </script>
+
+
+</div>
 </body>
 </html>
