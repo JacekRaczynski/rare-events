@@ -1,12 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Moja Strona</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rare Events</title>
+    <link rel="stylesheet" href="style.css">
+  
+  
 </head>
-<body>
-    <h1>Witaj na mojej stronie!</h1>
-    <button onclick="window.location.href='index.html'">Przejdź do strony głównej</button>
+<body style="    background-image: url('/resources/132.jpg');">
+
+  <header style="display: flex; align-items: center;">
+
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+
+<span class="navbar-toggler-icon"></span>
+
+<ul class="nav-horizontal">
+  <li class="nav-item"><a class="nav-link" href="/"><img src="/resources/beige.png" alt="Logo" style="height: 80px;"></a></li>
+  <li class="nav-item"><a class="nav-link"  href="bio.html">O mnie </a></li>
+  <li class="nav-item"><a class="nav-link"  href="offert.html">Oferta</a></li>
+  <li class="nav-item"><a class="nav-link"  href="activities.html">Aktualności</a></li>
+  <li class="nav-item"><a class="nav-link"  href="portfolio.html">Portfolio</a></li>
+</ul>
+
+
+    </nav>
+  </header>
+  <div class="content">
+ 
+    <section class="section-page" id="Aboutme" style="background-color: #f5ebe2;
+    background: linear-gradient(to bottom, #f0e5dc, rgba(245, 245, 220, 0));">
+              <div class="rotated-text" >About me</div>
+      
+        <div class="frame" style="margin-left: 8dvw;">
+          <h2 style=" font-weight: bold">O mnie</h2>
+          <p>Rare Events to mój sposób na realizację swoich pasji
+            i organizowanie prawdziwie wyjątkowych wydarzeń.
+            Najważniejsza jest dla mnie satysfakcja klientów, dlatego
+            nie przestaję się rozwijać.</p>
+            <ul>
+              <li>Master in Project Management, Rome Business School, Universidad Internacional de Valencia</li>
+              <li>Zarządzanie organizacjami, Uniwersytet Gdański</li>
+              <li>Organizowanie wydarzeń w pracy, wolontariacko i dla przyjemności</li>
+              <li> Już działam nad kolejnym celem!</li>
+          </ul>
+          <p>
+            Prywatnie uwielbiam J.R.R. Tolkiena, Agathę Christie
+            i wielu im podobnych. “Spędzam” z nimi (za)dużo czasu.</p>
+        </div>
+          <img class="aboutme-img" src="/resources/Rare Events3.png" alt="My profile" >
+          <div style="
+          position: absolute;
+          bottom: 20px; /* odstęp od dolnej krawędzi */
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100px;
+          cursor: pointer;
+        ">
+            <img src="/resources/arrow_down.png" alt="Scroll Button" style="cursor: pointer; width: 100px;"
+              onclick="document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' });">
+          </div>
+    </section>
+
+ 
+      <div id="footer"></div>
+      <script>
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer').innerHTML = data;
+          });
+
+      </script>
+
+
+</div>
 </body>
 </html>
